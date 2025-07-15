@@ -1,9 +1,25 @@
+@import "./base/variables";
 @import "./base/reset";
 @import "./base/typography";
-@import "./base/variables";
+@import "./base/common";
 
 @import "./components/button";
+@import "./components/impact-item";
+@import "./components/course-card";
+@import "./components/tag";
+@import "./components/instructor-card";
+@import "./components/course-evaluation-item";
+@import "./components/input";
 
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/grid";
+
+@import "./sections/hero";
+@import "./sections/impact";
+@import "./sections/course";
+@import "./sections/adventure";
+@import "./sections/instructors";
+@import "./sections/course-evaluation";
+@import "./sections/contact";
+@import "./sections/cta";

@@ -1,0 +1,23 @@
+.course-evaluation {
+  &__item {
+    background-color: $white;
+    padding: 22px 22px 25px;
+    border-radius: 20px;
+  }
+
+  &__title {
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  &__number {
+    font-size: 40px;
+    color: $blue-muted;
+    width: 59px;
+    height: 49px;
+  }
+}

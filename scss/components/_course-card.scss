@@ -1,0 +1,30 @@
+.course {
+  &__card {
+    background-color: $white;
+    border-radius: 20px;
+    padding: 36px 30px;
+    box-shadow: 0px 4px 32px 0px $blue-tint;
+
+    &-icon {
+      margin-bottom: 31px;
+    }
+
+    &-tags {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 17px;
+    }
+
+    &-title {
+      color: $blue-dark;
+      font-weight: 900;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &-description {
+      margin-bottom: 24px;
+    }
+  }
+}

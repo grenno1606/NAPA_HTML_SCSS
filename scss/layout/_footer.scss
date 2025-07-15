@@ -1,0 +1,26 @@
+.footer {
+  background-color: $blue-dark;
+  padding: 61px 37px 68px 39px;
+
+  &__logo {
+    width: 262px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 51px;
+    margin-bottom: 37px;
+  }
+
+  &__copyright {
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+  }
+}

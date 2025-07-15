@@ -9,223 +9,277 @@
 </head>
 
 <body>
-  <header>
-    <img src="../asset/images/edunest_logo.svg" alt="">
-    <svg width="90" height="91" viewBox="0 0 90 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g filter="url(#filter0_d_0_1)">
-        <path d="M16 41.5C16 25.2076 29.2076 12 45.5 12C61.7924 12 75 25.2076 75 41.5V71H45.5C29.2076 71 16 57.7924 16 41.5Z" fill="#437FFF" />
-      </g>
-      <rect x="36.6758" y="28.1774" width="25.0015" height="5.8827" rx="2.94135" fill="white" />
-      <rect x="29.3228" y="38.4721" width="19.1188" height="5.8827" rx="2.94135" fill="white" />
-      <rect x="36.6758" y="48.7669" width="25.0015" height="5.8827" rx="2.94135" fill="white" />
-      <defs>
-        <filter id="filter0_d_0_1" x="0" y="0" width="91" height="91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-          <feOffset dy="4" />
-          <feGaussianBlur stdDeviation="8" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix type="matrix" values="0 0 0 0 0.264423 0 0 0 0 0.497356 0 0 0 0 1 0 0 0 0.16 0" />
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape" />
-        </filter>
-      </defs>
-    </svg>
+  <header class="header padding-sm">
+    <img class="header__logo" src="../asset/images/edunest_logo.svg" alt="">
+    <div class="header__menu">
+      <img class="header__menu-icon" src="../asset/images/menu_icon.svg" alt="">
+    </div>
   </header>
 
   <main>
-    <section>
-      <p>Build. Learn. Deploy. Repeat.</p>
-      <p>Educating the Next Generation of Developers & Designers</p>
-      <ul>
-        <li>
-          <img src="../asset/images/instructor_avatar_1.svg" alt="">
+    <section class="hero border-radius-b-lg padding-sm">
+      <p class="hero__tagline">Build. Learn. Deploy. Repeat.</p>
+      <p class="hero__title">Educating <span class="hero__title--highlight">the Next Generation of</span> Developers <span class="hero__title--highlight">&</span> Designers</p>
+      <ul class="hero__instructors">
+        <li class="hero__instructor">
+          <img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_1.svg" alt="">
         </li>
-        <li><img src="../asset/images/instructor_avatar_2.svg" alt=""></li>
-        <li><img src="../asset/images/instructor_avatar_3.svg" alt=""></li>
-        <li>+10</li>
-      </ul>
-      <p>Instructors to Help you Learn</p>
-      <button>Start a Course <img src="" alt=""></button>
-    </section>
-
-    <section>
-      <p>The Nest for Creative Builders</p>
-      <p>EduNest is a learning hub built for the modern maker, whether you're a developer, a designer, or somewhere in between. We bring together hands-on coding tutorials, design fundamentals, and project-based learning to help you build real-world skills that matter. From front-end frameworks to UI systems, from logic to layout—we’re here to support your growth. At EduNest, we believe in empowering creative problem-solvers with the knowledge, tools, and confidence to bring bold ideas to life.</p>
-      <p>Our Impact So Far</p>
-      <ul>
-        <li>
-          <p>+7k</p>
-          <p>Students</p>
-        </li>
-        <li>
-          <p>+13</p>
-          <p>Instructors</p>
-        </li>
-        <li>
-          <p>36</p>
-          <p>Courses</p>
-        </li>
-        <li>
-          <p>9</p>
-          <p>Certificates</p>
+        <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_2.svg" alt=""></li>
+        <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_3.svg" alt=""></li>
+        <li class="hero__instructor">
+          <p class="hero__instructor--more">+10</p>
         </li>
       </ul>
+      <p class="hero__instructors-caption">Instructors to Help you Learn</p>
+      <button class="button button--primary hero__button">Start a Course<img class="button__icon" src="../asset/images/arrow_small_right.svg" alt=""></button>
     </section>
 
-    <section>
-      <p>Introduction Courses</p>
-      <p>Kickstart your learning with beginner-friendly courses designed to build a solid foundation in development and design, no experience required.</p>
-      <div>
-        <div>
-          <img src="../asset/images/course_card_icon.svg" alt="">
-          <ul>
-            <li>BEGINNER</li>
-            <li>UI/UX</li>
-          </ul>
-          <p>Color Theory</p>
-          <p>Learn how color impacts design, emotion, and user experience. Master palettes, contrast, and harmony to create visually compelling interfaces.</p>
-          <div><img src="../asset/images/arrow_small_right.svg" alt="">JOIN THE NEST</div>
-        </div>
-        <div>
-          <img src="../asset/images/course_card_icon.svg" alt="">
-          <ul>
-            <li>BEGINNER</li>
-            <li>FRONT-END</li>
-          </ul>
-          <p>HTML5/CSS3</p>
-          <p>Build solid web foundations with HTML5 and CSS3. Learn to structure pages, style elements, and create responsive, modern layouts.</p>
-          <div><img src="../asset/images/arrow_small_right.svg" alt="">JOIN THE NEST</div>
-        </div>
-        <div>
-          <img src="../asset/images/course_card_icon.svg" alt="">
-          <ul>
-            <li>BEGINNER</li>
-            <li>SOFTWARE</li>
-          </ul>
-          <p>Intro to Python</p>
-          <p>Dive into Python programming, learning syntax, data structures, and core concepts to build efficient, scalable applications.</p>
-          <div><img src="../asset/images/arrow_small_right.svg" alt="">JOIN THE NEST</div>
-        </div>
-        <div>
-          <img src="../asset/images/course_card_icon.svg" alt="">
-          <ul>
-            <li>BEGINNER</li>
-            <li>THEORY/AI</li>
-          </ul>
-          <p>Linear Algebra</p>
-          <p>Understand the fundamentals of vectors, matrices, and transformations to solve complex problems in data science, graphics, and machine learning.</p>
-          <div><img src="" alt="">JOIN THE NEST</div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <p>Your Learning Adventure Begins</p>
-      <div>
-        <img src="../asset/images/arrow_small_right.svg" alt="">
-        JOIN THE NEST
-      </div>
-    </section>
-
-    <section>
-      <p>Your Instructors</p>
-      <p>Learn from industry experts and passionate educators who bring real-world experience and insightful guidance to every lesson, ensuring your success.</p>
-      <div>
-        <div>
-          <img src="../asset/images/instructor_avatar_4.svg" alt="">
-        </div>
-        <div>
-          <img src="../asset/images/instructor_avatar_5.svg" alt="">
-          <p>INSTRUCTOR</p>
-          <p>Mark Drye</p>
-          <ul>
-            <li>PYTHON</li>
-            <li>DJANGO</li>
-          </ul>
-        </div>
-        <div>
-          <img src="../asset/images/instructor_avatar_1.svg" alt="">
-        </div>
-        <div>
-          <img src="../asset/images/instructor_avatar_6.svg" alt="">
-        </div>
-        <div>
-          <img src="../asset/images/instructor_avatar_7.svg" alt="">
-        </div>
-        <div>
-          <img src="../asset/images/instructor_avatar_8.svg" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <p>Course Evaluation</p>
-      <p>Get personalized feedback and assessments to track your growth, reinforce learning, and ensure you're ready for real-world challenges.</p>
-      <div>
-        <div>
-          <div>01<p>Lecture</p>
+    <section class="impact border-radius-10 margin-sm">
+      <p class="impact__heading">The <span class="impact__heading--highlight">Nest</span> for Creative Builders</p>
+      <p class="impact__description">EduNest is a learning hub built for the modern maker, whether you're a developer, a designer, or somewhere in between. We bring together hands-on coding tutorials, design fundamentals, and project-based learning to help you build real-world skills that matter. From front-end frameworks to UI systems, from logic to layout—we’re here to support your growth. At EduNest, we believe in empowering creative problem-solvers with the knowledge, tools, and confidence to bring bold ideas to life.</p>
+      <p class="impact__title">Our Impact So Far</p>
+      <ul class="impact__items row">
+        <li class="col-12">
+          <div class="impact__item">
+            <p class="impact__item--value">+7k</p>
+            <p class="impact__item--label">Students</p>
           </div>
-          <p>Engage with clear, structured lessons designed to explain concepts step by step, making even complex topics easy to grasp.</p>
-        </div>
-        <div>
-          <div>02<p>Exercises</p>
+        </li>
+        <li class="col-12">
+          <div class="impact__item">
+            <p class="impact__item--value">+13</p>
+            <p class="impact__item--label">Instructors</p>
           </div>
-          <p>Reinforce your understanding with hands-on tasks that let you apply what you've learned through real-world scenarios.</p>
-        </div>
-        <div>
-          <div>03<p>Capstone</p>
+        </li>
+        <li class="col-12">
+          <div class="impact__item">
+            <p class="impact__item--value">36</p>
+            <p class="impact__item--label">Courses</p>
           </div>
-          <p>Apply your skills in a final project that mirrors real professional work, perfect for your portfolio and future job opportunities.</p>
+        </li>
+        <li class="col-12">
+          <div class="impact__item">
+            <p class="impact__item--value">9</p>
+            <p class="impact__item--label">Certificates</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="course margin-sm">
+      <p class="course__heading">Introduction <span class="course__heading--highlight">Courses</span></p>
+      <p class="course__description">Kickstart your learning with beginner-friendly courses designed to build a solid foundation in development and design, no experience required.</p>
+      <div class="course__list row">
+        <div class="col-12">
+          <div class="course__card">
+            <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
+            <ul class="course__card-tags">
+              <li class="course__card-tag tag tag--dark">BEGINNER</li>
+              <li class="course__card-tag tag tag--dark">UI/UX</li>
+            </ul>
+            <p class="course__card-title">Color Theory</p>
+            <p class="course__card-description">Learn how color impacts design, emotion, and user experience. Master palettes, contrast, and harmony to create visually compelling interfaces.</p>
+            <button class="course__card-button button button--ghost text--blue">
+              <div class="button__icon">
+                <img src="../asset/images/arrow_small_right.svg" alt="">
+              </div>JOIN THE NEST
+            </button>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="course__card">
+            <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
+            <ul class="course__card-tags">
+              <li class="course__card-tag tag tag--dark">BEGINNER</li>
+              <li class="course__card-tag tag tag--dark">FRONT-END</li>
+            </ul>
+            <p class="course__card-title">HTML5/CSS3</p>
+            <p class="course__card-description">Build solid web foundations with HTML5 and CSS3. Learn to structure pages, style elements, and create responsive, modern layouts.</p>
+            <button class="course__card-button button button--ghost text--blue">
+              <div class="button__icon">
+                <img src="../asset/images/arrow_small_right.svg" alt="">
+              </div>JOIN THE NEST
+            </button>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="course__card">
+            <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
+            <ul class="course__card-tags">
+              <li class="course__card-tag tag tag--dark">BEGINNER</li>
+              <li class="course__card-tag tag tag--dark">SOFTWARE</li>
+            </ul>
+            <p class="course__card-title">Intro to Python</p>
+            <p class="course__card-description">Dive into Python programming, learning syntax, data structures, and core concepts to build efficient, scalable applications.</p>
+            <button class="course__card-button button button--ghost text--blue">
+              <div class="button__icon">
+                <img src="../asset/images/arrow_small_right.svg" alt="">
+              </div>JOIN THE NEST
+            </button>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="course__card">
+            <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
+            <ul class="course__card-tags">
+              <li class="course__card-tag tag tag--dark">BEGINNER</li>
+              <li class="course__card-tag tag tag--dark">THEORY/AI</li>
+            </ul>
+            <p class="course__card-title">Linear Algebra</p>
+            <p class="course__card-description">Understand the fundamentals of vectors, matrices, and transformations to solve complex problems in data science, graphics, and machine learning.</p>
+            <button class="course__card-button button button--ghost text--blue">
+              <div class="button__icon">
+                <img src="../asset/images/arrow_small_right.svg" alt="">
+              </div>JOIN THE NEST
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <p>Ask us Something</p>
-      <p>Have questions, feedback, or just want to say hello? Reach out to us, we’re here to help and always happy to hear from you.</p>
-      <div>
-        <p>FULL NAME</p>
-        <p>Mary Doe</p>
+    <section class="adventure border-radius-5 margin-sm">
+      <div class="adventure__overlay">
+        <p class="adventure__title">Your <span class="adventure__highlight">Learning </span>Adventure Begins</p>
+        <button class="adventure__button button button--ghost text--white">
+          <div class="button__icon button__icon--dark">
+            <img src="../asset/images/arrow_small_right.svg" alt="">
+          </div>
+          JOIN THE NEST
+        </button>
       </div>
-      <div>
-        <p>EMAIL ADDRESS</p>
-        <p>marydoe@gmail.com</p>
-      </div>
-      <div>
-        <p>PHONE NUMBER</p>
-        <p>10 1001 1001 100</p>
-      </div>
-      <div>
-        <p>HOW DID YOU LEARN ABOUT EDUNEST?</p>
-        <p>Social Media</p>
-      </div>
-      <div>
-        <p>YOUR MESSAGE</p>
-        <p>Tell us ...</p>
-      </div>
-      <button>Send Your Message</button>
     </section>
 
-    <section>
-      <p>Unlock your True Potential</p>
-      <div>
-        <img src="../asset/images/arrow_small_right.svg" alt="">
-        JOIN THE NEST
+    <section class="instructors mb-10 margin-sm">
+      <p class="instructors__heading">Your <span class="instructors__highlight">Instructors</span></p>
+      <p class="instructors__description">Learn from industry experts and passionate educators who bring real-world experience and insightful guidance to every lesson, ensuring your success.</p>
+      <div class="instructors__list">
+        <div class="row">
+          <div class="instructor-card col-6">
+            <img class="instructor-card__image" src="../asset/images/instructor_avatar_4.svg" alt="">
+          </div>
+          <div class="instructor-card col-6">
+            <img class="instructor-card__image" src="../asset/images/instructor_avatar_5.svg" alt="">
+            <div class="instructor-card__overlay">
+              <p class="instructor-card__label">INSTRUCTOR</p>
+              <p class="instructor-card__name">Mark Drye</p>
+              <ul class="instructor-card__tags">
+                <li class="instructor-card__tag tag tag--sm">PYTHON</li>
+                <li class="instructor-card__tag tag tag--sm">DJANGO</li>
+              </ul>
+            </div>
+          </div>
+          <div class="instructor-card col-6">
+            <img class="instructor-card__image" src="../asset/images/instructor_avatar_1.svg" alt="">
+          </div>
+          <div class="instructor-card col-6">
+            <img class="instructor-card__image" src="../asset/images/instructor_avatar_6.svg" alt="">
+          </div>
+          <div class="instructor-card col-6">
+            <img class="instructor-card__image" src="../asset/images/instructor_avatar_7.svg" alt="">
+          </div>
+          <div class="instructor-card col-6">
+            <img class="instructor-card__image" src="../asset/images/instructor_avatar_8.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-evaluation margin-sm border-radius-5">
+      <p class="course-evaluation__heading">Course <span class="course-evaluation__highlight">Evaluation</span></p>
+      <p class="course-evaluation__description">Get personalized feedback and assessments to track your growth, reinforce learning, and ensure you're ready for real-world challenges.</p>
+      <div class="course-evaluation__list row">
+        <div class="col-12">
+          <div class="course-evaluation__item">
+            <div class="course-evaluation__title">
+              <p class="course-evaluation__number">01</p>Lecture
+            </div>
+            <p class="course-evaluation__text">Engage with clear, structured lessons designed to explain concepts step by step, making even complex topics easy to grasp.</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="course-evaluation__item">
+            <div class="course-evaluation__title">
+              <p class="course-evaluation__number">02</p>Exercises
+            </div>
+            <p class="course-evaluation__text">Reinforce your understanding with hands-on tasks that let you apply what you've learned through real-world scenarios.</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="course-evaluation__item">
+            <div class="course-evaluation__title">
+              <p class="course-evaluation__number">03</p>Capstone
+            </div>
+            <p class="course-evaluation__text">Apply your skills in a final project that mirrors real professional work, perfect for your portfolio and future job opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact margin-sm border-radius-10">
+      <p class="contact__title">Ask us <span class="contact__highlight">Something</span></p>
+      <p class="contact__description">Have questions, feedback, or just want to say hello? Reach out to us, we’re here to help and always happy to hear from you.</p>
+      <form action="" class="contact__form">
+        <div class="row">
+          <div class="col-12">
+            <div class="contact__field input">
+              <label class="contact__label input__label" for="">FULL NAME</label>
+              <input class="contact__input input__inner" type="text" placeholder="Mary Doe">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="contact__field input">
+              <label class="contact__label input__label" for="">EMAIL ADDRESS</label>
+              <input class="contact__input input__inner" type="email" placeholder="marydoe@gmail.com">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="contact__field input">
+              <label class="contact__label input__label" for="">PHONE NUMBER</label>
+              <input class="contact__input input__inner" type="text" placeholder="10 1001 1001 100">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="contact__field input">
+              <label class="contact__label input__label" for="">HOW DID YOU LEARN ABOUT EDUNEST?</label>
+              <select class="contact__select input__select" name="" id="">
+                <option value="">Social Media</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="contact__field input">
+              <label class="contact__label input__label" for="">YOUR MESSAGE</label>
+              <textarea rows="4" class="contact__textarea input__inner input__textarea" name="" id="" placeholder="Tell us ..."></textarea>
+            </div>
+          </div>
+        </div>
+        <button class="contact__button button button--primary">Send Your Message</button>
+      </form>
+    </section>
+
+    <section class="cta border-radius-t-lg">
+      <div class="cta__overlay">
+        <p class="cta__title">Unlock your True <span class="cta__highlight">Potential</span></p>
+        <button class="cta__button button button--ghost text--white">
+          <div class="button__icon button__icon--dark">
+            <img src="../asset/images/arrow_small_right.svg" alt="">
+          </div>
+          JOIN THE NEST
+        </button>
       </div>
     </section>
   </main>
 
-  <footer>
-    <img src="../asset/images/edunest_logo.svg" alt="">
-    <ul>
-      <li><img src="../asset/images/facebook_logo.svg" alt=""></li>
-      <li><img src="../asset/images/linkedin_logo.svg" alt=""></li>
-      <li><img src="../asset/images/youtube_logo.svg" alt=""></li>
-      <li><img src="../asset/images/instagram_logo.svg" alt=""></li>
-      <li><img src="../asset/images/pinterest_logo.svg" alt=""></li>
+  <footer class="footer">
+    <img class="footer__logo" src="../asset/images/logo_footer.svg" alt="">
+    <ul class="footer__list">
+      <li class="footer__item"><img src="../asset/images/facebook_logo.svg" alt=""></li>
+      <li class="footer__item"><img src="../asset/images/linkedin_logo.svg" alt=""></li>
+      <li class="footer__item"><img src="../asset/images/youtube_logo.svg" alt=""></li>
+      <li class="footer__item"><img src="../asset/images/instagram_logo.svg" alt=""></li>
+      <li class="footer__item"><img src="../asset/images/pinterest_logo.svg" alt=""></li>
     </ul>
-    <p>EduNest © All Rights Reserved. 2025 By Zine. e. falouti</p>
+    <p class="footer__copyright">EduNest © All Rights Reserved. 2025 By Zine. e. falouti</p>
   </footer>
 </body>
 

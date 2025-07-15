@@ -1,0 +1,24 @@
+.impact {
+  &__item {
+    margin: 0 auto;
+    background-color: $blue-dark;
+    display: flex;
+    border-radius: 10px;
+    padding: 18px 27px;
+    justify-content: space-between;
+    gap: 27px;
+    align-items: center;
+    width: 100%;
+    max-width: 254px;
+
+    &--value {
+      color: $blue;
+      font-weight: 900;
+      font-size: 40px;
+    }
+
+    &--label {
+      color: $white;
+    }
+  }
+}

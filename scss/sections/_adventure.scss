@@ -1,0 +1,33 @@
+.adventure {
+  background-image: url("../../asset/images/adventure_background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 49px 18px 42px 20px;
+  margin-bottom: 30px;
+
+  &__overlay {
+    background: linear-gradient(
+      180deg,
+      $black-transparent-lightest 0%,
+      $black-transparent-medium 100%
+    );
+    border: 9px solid $white-muted;
+    border-radius: 20px;
+    backdrop-filter: blur(16px);
+    padding: 32px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  &__highlight {
+    font-weight: 900;
+  }
+}

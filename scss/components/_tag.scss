@@ -1,0 +1,18 @@
+.tag {
+  border-radius: 40px;
+  background-color: $blue;
+  color: $white;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 4px 15px;
+  display: inline;
+
+  &--dark {
+    background-color: $blue-dark;
+  }
+
+  &--sm {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.course-evaluation {
+  padding-left: 18px;
+  padding-right: 15px;
+  padding-top: 29px;
+  padding-bottom: 36px;
+  margin-bottom: 24px;
+  background-color: $blue-light;
+
+  &__heading {
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__highlight {
+    font-weight: 900;
+  }
+
+  &__description {
+    text-align: center;
+    max-width: 305px;
+    margin: 0 auto 18px;
+  }
+}

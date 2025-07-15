@@ -1,0 +1,36 @@
+.cta {
+  background-image: url("../../asset/images/office_team_working_2.svg");
+  background-size: cover;
+  padding-top: 55px;
+  padding-bottom: 26px;
+
+  &__overlay {
+    margin: 0 auto;
+    max-width: 344px;
+    border-radius: 20px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+    background: linear-gradient(
+      180deg,
+      $black-transparent-lightest 0%,
+      $black-transparent-medium 100%
+    );
+    border: 9px solid $white-muted;
+    backdrop-filter: blur(16px);
+  }
+
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    color: $white;
+    margin-bottom: 16px;
+  }
+
+  &__highlight {
+    font-weight: 900;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
