@@ -25,3 +25,15 @@
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
 }
+
+@media (min-width: $breakpoint-md) {
+  .padding-sm {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .margin-sm {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

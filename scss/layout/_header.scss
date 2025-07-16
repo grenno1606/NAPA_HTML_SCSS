@@ -23,3 +23,14 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-md) {
+  .header {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    &__menu {
+      width: 62px;
+      height: 62px;
+    }
+  }
+}

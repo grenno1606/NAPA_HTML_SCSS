@@ -20,44 +20,66 @@
     <section class="hero border-radius-b-lg padding-sm">
       <p class="hero__tagline">Build. Learn. Deploy. Repeat.</p>
       <p class="hero__title">Educating <span class="hero__title--highlight">the Next Generation of</span> Developers <span class="hero__title--highlight">&</span> Designers</p>
-      <ul class="hero__instructors">
-        <li class="hero__instructor">
-          <img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_1.svg" alt="">
-        </li>
-        <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_2.svg" alt=""></li>
-        <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_3.svg" alt=""></li>
-        <li class="hero__instructor">
-          <p class="hero__instructor--more">+10</p>
-        </li>
-      </ul>
-      <p class="hero__instructors-caption">Instructors to Help you Learn</p>
+      <div class="hero__group">
+        <ul class="hero__instructors">
+          <li class="hero__instructor">
+            <img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_1.svg" alt="">
+          </li>
+          <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_2.svg" alt=""></li>
+          <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_3.svg" alt=""></li>
+          <li class="hero__instructor">
+            <p class="hero__instructor--more">+10</p>
+          </li>
+        </ul>
+        <p class="hero__instructors-caption">Instructors to Help you Learn</p>
+      </div>
       <button class="button button--primary hero__button">Start a Course<img class="button__icon" src="../asset/images/arrow_small_right.svg" alt=""></button>
+      <div class="hero__images row">
+        <div class="col-3">
+          <div class="hero__image hero__image-right"><img src="../asset/images/hero_image_1.svg" alt=""></div>
+        </div>
+        <div class="col-3">
+          <div class="hero__image hero__image-left">
+            <img src="../asset/images/hero_image_2.svg" alt="">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="hero__image hero__image-right">
+            <img src="../asset/images/hero_image_3.svg" alt="">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="hero__image hero__image-left">
+            <img src="../asset/images/hero_image_4.png" alt="">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="impact border-radius-10 margin-sm">
       <p class="impact__heading">The <span class="impact__heading--highlight">Nest</span> for Creative Builders</p>
       <p class="impact__description">EduNest is a learning hub built for the modern maker, whether you're a developer, a designer, or somewhere in between. We bring together hands-on coding tutorials, design fundamentals, and project-based learning to help you build real-world skills that matter. From front-end frameworks to UI systems, from logic to layout—we’re here to support your growth. At EduNest, we believe in empowering creative problem-solvers with the knowledge, tools, and confidence to bring bold ideas to life.</p>
       <p class="impact__title">Our Impact So Far</p>
-      <ul class="impact__items row">
-        <li class="col-12">
+      <ul class="impact__items row gap-md">
+        <li class="col-12 col-md-6">
           <div class="impact__item">
             <p class="impact__item--value">+7k</p>
             <p class="impact__item--label">Students</p>
           </div>
         </li>
-        <li class="col-12">
+        <li class="col-12 col-md-6">
           <div class="impact__item">
             <p class="impact__item--value">+13</p>
             <p class="impact__item--label">Instructors</p>
           </div>
         </li>
-        <li class="col-12">
+        <li class="col-12 col-md-6">
           <div class="impact__item">
             <p class="impact__item--value">36</p>
             <p class="impact__item--label">Courses</p>
           </div>
         </li>
-        <li class="col-12">
+        <li class="col-12 col-md-6">
           <div class="impact__item">
             <p class="impact__item--value">9</p>
             <p class="impact__item--label">Certificates</p>
@@ -70,7 +92,7 @@
       <p class="course__heading">Introduction <span class="course__heading--highlight">Courses</span></p>
       <p class="course__description">Kickstart your learning with beginner-friendly courses designed to build a solid foundation in development and design, no experience required.</p>
       <div class="course__list row">
-        <div class="col-12">
+        <div class="col-12 col-md-6">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -86,7 +108,7 @@
             </button>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 col-md-6">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -102,7 +124,7 @@
             </button>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 col-md-6">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -118,7 +140,7 @@
             </button>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 col-md-6">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -154,31 +176,44 @@
       <p class="instructors__description">Learn from industry experts and passionate educators who bring real-world experience and insightful guidance to every lesson, ensuring your success.</p>
       <div class="instructors__list">
         <div class="row">
-          <div class="instructor-card col-6">
-            <img class="instructor-card__image" src="../asset/images/instructor_avatar_4.svg" alt="">
-          </div>
-          <div class="instructor-card col-6">
-            <img class="instructor-card__image" src="../asset/images/instructor_avatar_5.svg" alt="">
-            <div class="instructor-card__overlay">
-              <p class="instructor-card__label">INSTRUCTOR</p>
-              <p class="instructor-card__name">Mark Drye</p>
-              <ul class="instructor-card__tags">
-                <li class="instructor-card__tag tag tag--sm">PYTHON</li>
-                <li class="instructor-card__tag tag tag--sm">DJANGO</li>
-              </ul>
+          <div class="col-6 col-md-4">
+            <div class="instructor-card">
+              <img class="instructor-card__image" src="../asset/images/instructor_avatar_4.svg" alt="">
             </div>
           </div>
-          <div class="instructor-card col-6">
-            <img class="instructor-card__image" src="../asset/images/instructor_avatar_1.svg" alt="">
+          <div class="col-6 col-md-4">
+            <div class="instructor-card">
+              <img class="instructor-card__image" src="../asset/images/instructor_avatar_5.svg" alt="">
+              <div class="instructor-card__overlay">
+                <p class="instructor-card__label">INSTRUCTOR</p>
+                <p class="instructor-card__name">Mark Drye</p>
+                <ul class="instructor-card__tags">
+                  <li class="instructor-card__tag tag tag--sm">PYTHON</li>
+                  <li class="instructor-card__tag tag tag--sm">DJANGO</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
-          <div class="instructor-card col-6">
-            <img class="instructor-card__image" src="../asset/images/instructor_avatar_6.svg" alt="">
+          <div class="col-6 col-md-4">
+            <div class="instructor-card">
+              <img class="instructor-card__image" src="../asset/images/instructor_avatar_1.svg" alt="">
+            </div>
           </div>
-          <div class="instructor-card col-6">
-            <img class="instructor-card__image" src="../asset/images/instructor_avatar_7.svg" alt="">
+          <div class="col-6 col-md-4">
+            <div class="instructor-card">
+              <img class="instructor-card__image" src="../asset/images/instructor_avatar_6.svg" alt="">
+            </div>
           </div>
-          <div class="instructor-card col-6">
-            <img class="instructor-card__image" src="../asset/images/instructor_avatar_8.svg" alt="">
+          <div class="col-6 col-md-4">
+            <div class="instructor-card">
+              <img class="instructor-card__image" src="../asset/images/instructor_avatar_7.svg" alt="">
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="instructor-card">
+              <img class="instructor-card__image" src="../asset/images/instructor_avatar_8.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -220,25 +255,25 @@
       <p class="contact__description">Have questions, feedback, or just want to say hello? Reach out to us, we’re here to help and always happy to hear from you.</p>
       <form action="" class="contact__form">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-md-6">
             <div class="contact__field input">
               <label class="contact__label input__label" for="">FULL NAME</label>
               <input class="contact__input input__inner" type="text" placeholder="Mary Doe">
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-6">
             <div class="contact__field input">
               <label class="contact__label input__label" for="">EMAIL ADDRESS</label>
               <input class="contact__input input__inner" type="email" placeholder="marydoe@gmail.com">
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-6">
             <div class="contact__field input">
               <label class="contact__label input__label" for="">PHONE NUMBER</label>
               <input class="contact__input input__inner" type="text" placeholder="10 1001 1001 100">
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-6">
             <div class="contact__field input">
               <label class="contact__label input__label" for="">HOW DID YOU LEARN ABOUT EDUNEST?</label>
               <select class="contact__select input__select" name="" id="">

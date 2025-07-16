@@ -17,3 +17,20 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: $breakpoint-md) {
+  .course {
+    margin-bottom: 56px;
+
+    &__heading {
+      font-size: 40px;
+    }
+
+    &__description {
+      margin-top: 21px;
+      margin-bottom: 42px;
+      max-width: 690px;
+      font-size: 16px;
+    }
+  }
+}

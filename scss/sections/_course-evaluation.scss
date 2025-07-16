@@ -4,7 +4,7 @@
   padding-top: 29px;
   padding-bottom: 36px;
   margin-bottom: 24px;
-  background-color: $blue-light;
+  background-color: $blue-lighter;
 
   &__heading {
     font-weight: 300;
@@ -21,5 +21,26 @@
     text-align: center;
     max-width: 305px;
     margin: 0 auto 18px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .course-evaluation {
+    padding-left: 61px;
+    padding-right: 62px;
+    padding-top: 52px;
+    padding-bottom: 58px;
+    margin-bottom: 51px;
+
+    &__heading {
+      font-size: 40px;
+      margin-bottom: 11px;
+    }
+
+    &__description {
+      max-width: 610px;
+      margin: 0 auto 36px;
+      font-size: 16px;
+    }
   }
 }

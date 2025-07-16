@@ -31,6 +31,8 @@
 
       &--dark {
         background-color: $blue-dark;
+        width: 37px;
+        height: 37px;
       }
     }
   }
@@ -38,5 +40,14 @@
   &__icon {
     width: 10px;
     height: 8px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .button {
+    &--primary {
+      padding: 14px 17px;
+      gap: 31px;
+    }
   }
 }

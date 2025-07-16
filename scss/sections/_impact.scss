@@ -34,3 +34,31 @@
     margin-bottom: 37px;
   }
 }
+
+@media (min-width: $breakpoint-md) {
+  .impact {
+    padding-top: 54px;
+    padding-bottom: 94px;
+    margin-bottom: 50px;
+
+    &__heading {
+      font-size: 40px;
+      max-width: 393px;
+      margin-bottom: 37px;
+    }
+
+    &__description {
+      max-width: 640px;
+      margin-bottom: 74px;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+
+    &__items {
+      max-width: 520px;
+    }
+  }
+}

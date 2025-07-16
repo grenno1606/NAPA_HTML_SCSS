@@ -15,6 +15,22 @@
 
   &__highlight {
     font-weight: 900;
-    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .instructors {
+    margin-bottom: 54.19px;
+
+    &__heading {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin-top: 21px;
+      margin-bottom: 46px;
+      max-width: 690px;
+    }
   }
 }

@@ -9,20 +9,6 @@ $grid-gutter: 5px;
   margin-right: -#{$grid-gutter / 2};
 }
 
-.gap {
-  &-sx {
-    row-gap: 12px;
-  }
-
-  &-md {
-    row-gap: 20px;
-  }
-
-  &-lg {
-    row-gap: 24px;
-  }
-}
-
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: (100% / 12) * $i;
@@ -57,5 +43,19 @@ $grid-gutter: 5px;
       width: (100% / 12) * $i;
       padding: 0 $grid-gutter-xl / 2;
     }
+  }
+}
+
+.gap {
+  &-sx {
+    row-gap: 12px;
+  }
+
+  &-md {
+    row-gap: 20px !important;
+  }
+
+  &-lg {
+    row-gap: 24px;
   }
 }

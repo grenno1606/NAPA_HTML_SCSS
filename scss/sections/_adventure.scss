@@ -2,6 +2,7 @@
   background-image: url("../../asset/images/adventure_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 49px 18px 42px 20px;
   margin-bottom: 30px;
 
@@ -29,5 +30,25 @@
 
   &__highlight {
     font-weight: 900;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .adventure {
+    padding: 59px 35px;
+    margin-bottom: 46px;
+
+    &__overlay {
+      margin-left: auto;
+      max-width: 393px;
+      padding: 42px 30px;
+      align-items: start;
+    }
+
+    &__title {
+      margin-bottom: 21px;
+      text-align: start;
+      max-width: 247px;
+    }
   }
 }

@@ -1,6 +1,7 @@
 .cta {
   background-image: url("../../asset/images/office_team_working_2.svg");
   background-size: cover;
+  background-position: center;
   padding-top: 55px;
   padding-bottom: 26px;
 
@@ -32,5 +33,31 @@
 
   &__button {
     width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .cta {
+    padding-top: 48px;
+    padding-bottom: 33px;
+
+    &__overlay {
+      margin: 0 auto;
+      max-width: 726px;
+      padding: 56px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-size: 24px;
+      text-align: start;
+      margin-bottom: 0;
+    }
+
+    &__button {
+      width: fit-content;
+    }
   }
 }

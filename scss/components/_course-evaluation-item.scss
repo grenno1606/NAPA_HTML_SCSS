@@ -21,3 +21,22 @@
     height: 49px;
   }
 }
+
+@media (min-width: $breakpoint-md) {
+  .course-evaluation {
+    &__item {
+      padding: 24px 22px 20px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      max-width: 186px;
+      width: 100%;
+    }
+  }
+}

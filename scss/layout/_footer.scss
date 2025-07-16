@@ -24,3 +24,14 @@
     color: $white;
   }
 }
+
+@media (min-width: $breakpoint-md) {
+  .footer {
+    padding-top: 58px;
+    padding-bottom: 60px;
+
+    &__list {
+      margin-bottom: 42px;
+    }
+  }
+}
