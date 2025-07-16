@@ -28,9 +28,23 @@
 
     &__description {
       font-size: 16px;
-      margin-top: 21px;
-      margin-bottom: 46px;
       max-width: 690px;
+      margin: 21px auto 46px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .instructors {
+    margin-bottom: 99px;
+
+    &__description {
+      margin: 21px auto 56px;
+    }
+
+    &__list {
+      max-width: 1260px;
+      margin: 0 auto;
     }
   }
 }

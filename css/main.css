@@ -280,6 +280,20 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 1400px) {
+  .course-evaluation__item {
+    flex-direction: column;
+    gap: 11px;
+    padding: 23px 33px;
+    width: 271px;
+  }
+  .course-evaluation__title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: none;
+  }
+}
 .input {
   border: 1px solid #162953;
   border-radius: 5px;
@@ -313,12 +327,17 @@ input::placeholder,
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #ffffff;
   padding-top: 18px;
   padding-bottom: 18px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__button {
+  display: none;
 }
 .header__menu {
   width: 59px;
@@ -336,6 +355,10 @@ input::placeholder,
   transform: translate(-50%, -50%);
 }
 
+.navbar {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header {
     padding-top: 36px;
@@ -344,6 +367,35 @@ input::placeholder,
   .header__menu {
     width: 62px;
     height: 62px;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+  .header__wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__button {
+    display: flex;
+  }
+  .navbar {
+    display: unset;
+  }
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+  }
+  .navbar__item > a {
+    font-weight: 700;
+    color: #162953;
   }
 }
 .footer {
@@ -571,21 +623,23 @@ input::placeholder,
   row-gap: 12px;
 }
 .gap-md {
-  row-gap: 20px !important;
+  row-gap: 20px;
 }
 .gap-lg {
   row-gap: 24px;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #ffffff;
   padding-bottom: 98px;
   margin-bottom: 20px;
   padding-top: 31px;
   box-shadow: 0px 4px 32px 0px rgba(67, 127, 255, 0.0588235294);
+}
+.hero__wrapper, .hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero__tagline {
   color: #437fff;
@@ -636,6 +690,9 @@ input::placeholder,
   font-weight: 400;
   font-size: 24px;
 }
+.hero__images {
+  display: none;
+}
 .hero__instructors-caption {
   font-size: 12px;
   font-weight: 400;
@@ -660,8 +717,14 @@ input::placeholder,
     gap: 15px;
     margin-bottom: 37px;
   }
+  .hero__instructors-caption {
+    font-size: 16px;
+  }
   .hero__button {
     margin-bottom: 67px;
+  }
+  .hero__images {
+    display: flex;
   }
   .hero__image {
     width: 176.76px;
@@ -670,10 +733,78 @@ input::placeholder,
     border-top-right-radius: 140px;
     overflow: hidden;
   }
-  .hero__image-right {
+  .hero__image > img {
+    width: 100%;
+    height: 100%;
+  }
+  .hero__image-first, .hero__image-third {
     border-bottom-left-radius: 140px;
   }
-  .hero__image-left {
+  .hero__image-second, .hero__image-fourth {
+    border-bottom-right-radius: 140px;
+  }
+}
+@media (min-width: 1400px) {
+  .hero {
+    padding-bottom: 112px;
+    margin-bottom: 48px;
+    padding-top: 69px;
+  }
+  .hero__wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .hero__content {
+    width: 50%;
+    align-items: start;
+  }
+  .hero__tagline {
+    margin-bottom: 29px;
+  }
+  .hero__title {
+    margin-bottom: 62px;
+    text-align: start;
+    max-width: 553px;
+  }
+  .hero__group {
+    margin-bottom: 66px;
+  }
+  .hero__button {
+    margin-bottom: 0;
+  }
+  .hero__images {
+    width: 50%;
+    background-image: url("../../asset/images/hero_background.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    row-gap: 20px;
+  }
+  .hero__image {
+    width: 244px;
+    height: 244px;
+    border-radius: 0;
+  }
+  .hero__image-first {
+    margin-left: auto;
+    border-top-left-radius: 140px;
+    border-bottom-left-radius: 140px;
+    border-top-right-radius: 140px;
+  }
+  .hero__image-second {
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    border-bottom-right-radius: 140px;
+  }
+  .hero__image-third {
+    margin-left: auto;
+    border-top-left-radius: 140px;
+    border-bottom-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+  }
+  .hero__image-fourth {
+    border-bottom-left-radius: 140px;
+    border-top-right-radius: 140px;
     border-bottom-right-radius: 140px;
   }
 }
@@ -688,6 +819,11 @@ input::placeholder,
   padding-bottom: 57px;
   margin-bottom: 27px;
   box-shadow: 0px 4px 32px 0px rgba(67, 127, 255, 0.0588235294);
+}
+.impact__content-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .impact__heading {
   font-weight: 300;
@@ -733,6 +869,39 @@ input::placeholder,
     max-width: 520px;
   }
 }
+@media (min-width: 1400px) {
+  .impact {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 75px 70px 93px;
+    margin-bottom: 72px;
+  }
+  .impact__content-top {
+    flex-direction: row;
+    margin-bottom: 100px;
+    gap: 70px;
+  }
+  .impact__heading {
+    text-align: start;
+    margin-bottom: 0;
+  }
+  .impact__description {
+    text-align: start;
+    max-width: 664px;
+    margin-bottom: 0;
+  }
+  .impact__title {
+    margin-bottom: 17px;
+    text-align: start;
+    max-width: 1055px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .impact__items {
+    max-width: 1055px;
+    width: 100%;
+  }
+}
 .course {
   margin-bottom: 24px;
 }
@@ -758,10 +927,21 @@ input::placeholder,
     font-size: 40px;
   }
   .course__description {
-    margin-top: 21px;
-    margin-bottom: 42px;
     max-width: 690px;
+    margin: 21px auto 42px;
     font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .course {
+    margin-bottom: 70px;
+  }
+  .course__list {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .course__description {
+    margin: 21px auto 47px;
   }
 }
 .adventure {
@@ -809,6 +989,13 @@ input::placeholder,
     max-width: 247px;
   }
 }
+@media (min-width: 1400px) {
+  .adventure {
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 63px;
+  }
+}
 .instructors {
   margin-bottom: 39px;
 }
@@ -835,9 +1022,20 @@ input::placeholder,
   }
   .instructors__description {
     font-size: 16px;
-    margin-top: 21px;
-    margin-bottom: 46px;
     max-width: 690px;
+    margin: 21px auto 46px;
+  }
+}
+@media (min-width: 1400px) {
+  .instructors {
+    margin-bottom: 99px;
+  }
+  .instructors__description {
+    margin: 21px auto 56px;
+  }
+  .instructors__list {
+    max-width: 1260px;
+    margin: 0 auto;
   }
 }
 .course-evaluation {
@@ -862,6 +1060,9 @@ input::placeholder,
   max-width: 305px;
   margin: 0 auto 18px;
 }
+.course-evaluation__right {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .course-evaluation {
@@ -879,6 +1080,63 @@ input::placeholder,
     max-width: 610px;
     margin: 0 auto 36px;
     font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .course-evaluation {
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+  .course-evaluation__heading {
+    text-align: start;
+  }
+  .course-evaluation__description {
+    text-align: start;
+    max-width: none;
+  }
+  .course-evaluation__list {
+    display: none;
+  }
+  .course-evaluation__right {
+    display: flex;
+    gap: 20px;
+  }
+  .course-evaluation__right--col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .course-evaluation__box {
+    border-radius: 20px;
+    background-color: #f2f6ff;
+    width: 271px;
+    height: 153px;
+  }
+  .course-evaluation__box--top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .course-evaluation__box--bottom {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .course-evaluation__box--first {
+    height: 149px;
+  }
+  .course-evaluation__box--third {
+    height: 152px;
+  }
+  .course-evaluation__box--fifth {
+    height: 131px;
+  }
+  .course-evaluation__box--sixth {
+    height: 171px;
   }
 }
 .contact {
@@ -919,11 +1177,20 @@ input::placeholder,
   .contact__description {
     max-width: 608px;
     font-size: 16px;
-    margin-bottom: 49px;
+    margin: 0 auto 49px;
   }
   .contact__button {
     width: fit-content;
     margin: 36px auto 0;
+  }
+}
+@media (min-width: 1400px) {
+  .contact {
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 98px;
+    padding-top: 58px;
+    padding-bottom: 79px;
   }
 }
 .cta {
@@ -976,6 +1243,15 @@ input::placeholder,
   }
   .cta__button {
     width: fit-content;
+  }
+}
+@media (min-width: 1400px) {
+  .cta__overlay {
+    margin-left: 0;
+  }
+  .cta__wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
   }
 }
 

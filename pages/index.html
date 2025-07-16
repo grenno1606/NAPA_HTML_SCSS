@@ -10,76 +10,94 @@
 
 <body>
   <header class="header padding-sm">
-    <img class="header__logo" src="../asset/images/edunest_logo.svg" alt="">
-    <div class="header__menu">
-      <img class="header__menu-icon" src="../asset/images/menu_icon.svg" alt="">
+    <div class="header__wrapper">
+      <img class="header__logo" src="../asset/images/edunest_logo.svg" alt="">
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item"><a href="">About</a></li>
+          <li class="navbar__item"><a href="">Courses</a></li>
+          <li class="navbar__item"><a href="">Instructors</a></li>
+          <li class="navbar__item"><a href="">Evaluation</a></li>
+          <li class="navbar__item"><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__button button button--primary">Get Started<img class="button__icon" src="../asset/images/arrow_small_right.svg" alt=""></button>
+      <div class="header__menu">
+        <img class="header__menu-icon" src="../asset/images/menu_icon.svg" alt="">
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero border-radius-b-lg padding-sm">
-      <p class="hero__tagline">Build. Learn. Deploy. Repeat.</p>
-      <p class="hero__title">Educating <span class="hero__title--highlight">the Next Generation of</span> Developers <span class="hero__title--highlight">&</span> Designers</p>
-      <div class="hero__group">
-        <ul class="hero__instructors">
-          <li class="hero__instructor">
-            <img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_1.svg" alt="">
-          </li>
-          <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_2.svg" alt=""></li>
-          <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_3.svg" alt=""></li>
-          <li class="hero__instructor">
-            <p class="hero__instructor--more">+10</p>
-          </li>
-        </ul>
-        <p class="hero__instructors-caption">Instructors to Help you Learn</p>
-      </div>
-      <button class="button button--primary hero__button">Start a Course<img class="button__icon" src="../asset/images/arrow_small_right.svg" alt=""></button>
-      <div class="hero__images row">
-        <div class="col-3">
-          <div class="hero__image hero__image-right"><img src="../asset/images/hero_image_1.svg" alt=""></div>
-        </div>
-        <div class="col-3">
-          <div class="hero__image hero__image-left">
-            <img src="../asset/images/hero_image_2.svg" alt="">
+      <div class="hero__wrapper">
+        <div class="hero__content">
+          <p class="hero__tagline">Build. Learn. Deploy. Repeat.</p>
+          <p class="hero__title">Educating <span class="hero__title--highlight">the Next Generation of</span> Developers <span class="hero__title--highlight">&</span> Designers</p>
+          <div class="hero__group">
+            <ul class="hero__instructors">
+              <li class="hero__instructor">
+                <img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_1.svg" alt="">
+              </li>
+              <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_2.svg" alt=""></li>
+              <li class="hero__instructor"><img class="hero__instructor--avatar" src="../asset/images/instructor_avatar_3.svg" alt=""></li>
+              <li class="hero__instructor">
+                <p class="hero__instructor--more">+10</p>
+              </li>
+            </ul>
+            <p class="hero__instructors-caption">Instructors to Help you Learn</p>
           </div>
+          <button class="button button--primary hero__button">Start a Course<img class="button__icon" src="../asset/images/arrow_small_right.svg" alt=""></button>
         </div>
-        <div class="col-3">
-          <div class="hero__image hero__image-right">
-            <img src="../asset/images/hero_image_3.svg" alt="">
+        <div class="hero__images row">
+          <div class="col-3 col-xl-6">
+            <div class="hero__image hero__image-first"><img src="../asset/images/hero_image_1.svg" alt=""></div>
           </div>
-        </div>
-        <div class="col-3">
-          <div class="hero__image hero__image-left">
-            <img src="../asset/images/hero_image_4.png" alt="">
+          <div class="col-3 col-xl-6">
+            <div class="hero__image hero__image-second">
+              <img src="../asset/images/hero_image_2.svg" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-xl-6">
+            <div class="hero__image hero__image-third">
+              <img src="../asset/images/hero_image_3.svg" alt="">
+            </div>
+          </div>
+          <div class="col-3 col-xl-6">
+            <div class="hero__image hero__image-fourth">
+              <img src="../asset/images/hero_image_4.png" alt="">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="impact border-radius-10 margin-sm">
-      <p class="impact__heading">The <span class="impact__heading--highlight">Nest</span> for Creative Builders</p>
-      <p class="impact__description">EduNest is a learning hub built for the modern maker, whether you're a developer, a designer, or somewhere in between. We bring together hands-on coding tutorials, design fundamentals, and project-based learning to help you build real-world skills that matter. From front-end frameworks to UI systems, from logic to layout—we’re here to support your growth. At EduNest, we believe in empowering creative problem-solvers with the knowledge, tools, and confidence to bring bold ideas to life.</p>
+    <section class="impact border-radius-10 container margin-sm">
+      <div class="impact__content-top">
+        <p class="impact__heading">The <span class="impact__heading--highlight">Nest</span> for Creative Builders</p>
+        <p class="impact__description">EduNest is a learning hub built for the modern maker, whether you're a developer, a designer, or somewhere in between. We bring together hands-on coding tutorials, design fundamentals, and project-based learning to help you build real-world skills that matter. From front-end frameworks to UI systems, from logic to layout—we’re here to support your growth. At EduNest, we believe in empowering creative problem-solvers with the knowledge, tools, and confidence to bring bold ideas to life.</p>
+      </div>
       <p class="impact__title">Our Impact So Far</p>
       <ul class="impact__items row gap-md">
-        <li class="col-12 col-md-6">
+        <li class="col-12 col-md-6 col-xl-3">
           <div class="impact__item">
             <p class="impact__item--value">+7k</p>
             <p class="impact__item--label">Students</p>
           </div>
         </li>
-        <li class="col-12 col-md-6">
+        <li class="col-12 col-md-6 col-xl-3">
           <div class="impact__item">
             <p class="impact__item--value">+13</p>
             <p class="impact__item--label">Instructors</p>
           </div>
         </li>
-        <li class="col-12 col-md-6">
+        <li class="col-12 col-md-6 col-xl-3">
           <div class="impact__item">
             <p class="impact__item--value">36</p>
             <p class="impact__item--label">Courses</p>
           </div>
         </li>
-        <li class="col-12 col-md-6">
+        <li class="col-12 col-md-6 col-xl-3">
           <div class="impact__item">
             <p class="impact__item--value">9</p>
             <p class="impact__item--label">Certificates</p>
@@ -92,7 +110,7 @@
       <p class="course__heading">Introduction <span class="course__heading--highlight">Courses</span></p>
       <p class="course__description">Kickstart your learning with beginner-friendly courses designed to build a solid foundation in development and design, no experience required.</p>
       <div class="course__list row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-xl-3">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -108,7 +126,7 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-xl-3">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -116,7 +134,7 @@
               <li class="course__card-tag tag tag--dark">FRONT-END</li>
             </ul>
             <p class="course__card-title">HTML5/CSS3</p>
-            <p class="course__card-description">Build solid web foundations with HTML5 and CSS3. Learn to structure pages, style elements, and create responsive, modern layouts.</p>
+            <p class="course__card-description">Learn how color impacts design, emotion, and user experience. Master palettes, contrast, and harmony to create visually compelling interfaces.</p>
             <button class="course__card-button button button--ghost text--blue">
               <div class="button__icon">
                 <img src="../asset/images/arrow_small_right.svg" alt="">
@@ -124,7 +142,7 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-xl-3">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -132,7 +150,7 @@
               <li class="course__card-tag tag tag--dark">SOFTWARE</li>
             </ul>
             <p class="course__card-title">Intro to Python</p>
-            <p class="course__card-description">Dive into Python programming, learning syntax, data structures, and core concepts to build efficient, scalable applications.</p>
+            <p class="course__card-description">Learn how color impacts design, emotion, and user experience. Master palettes, contrast, and harmony to create visually compelling interfaces.</p>
             <button class="course__card-button button button--ghost text--blue">
               <div class="button__icon">
                 <img src="../asset/images/arrow_small_right.svg" alt="">
@@ -140,7 +158,7 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-xl-3">
           <div class="course__card">
             <img class="course__card-icon" src="../asset/images/course_card_icon.svg" alt="">
             <ul class="course__card-tags">
@@ -176,12 +194,12 @@
       <p class="instructors__description">Learn from industry experts and passionate educators who bring real-world experience and insightful guidance to every lesson, ensuring your success.</p>
       <div class="instructors__list">
         <div class="row">
-          <div class="col-6 col-md-4">
+          <div class="col-6 col-md-4 col-xl-2">
             <div class="instructor-card">
               <img class="instructor-card__image" src="../asset/images/instructor_avatar_4.svg" alt="">
             </div>
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-6 col-md-4 col-xl-2">
             <div class="instructor-card">
               <img class="instructor-card__image" src="../asset/images/instructor_avatar_5.svg" alt="">
               <div class="instructor-card__overlay">
@@ -195,22 +213,22 @@
             </div>
 
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-6 col-md-4 col-xl-2">
             <div class="instructor-card">
               <img class="instructor-card__image" src="../asset/images/instructor_avatar_1.svg" alt="">
             </div>
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-6 col-md-4 col-xl-2">
             <div class="instructor-card">
               <img class="instructor-card__image" src="../asset/images/instructor_avatar_6.svg" alt="">
             </div>
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-6 col-md-4 col-xl-2">
             <div class="instructor-card">
               <img class="instructor-card__image" src="../asset/images/instructor_avatar_7.svg" alt="">
             </div>
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-6 col-md-4 col-xl-2">
             <div class="instructor-card">
               <img class="instructor-card__image" src="../asset/images/instructor_avatar_8.svg" alt="">
             </div>
@@ -220,8 +238,42 @@
     </section>
 
     <section class="course-evaluation margin-sm border-radius-5">
-      <p class="course-evaluation__heading">Course <span class="course-evaluation__highlight">Evaluation</span></p>
-      <p class="course-evaluation__description">Get personalized feedback and assessments to track your growth, reinforce learning, and ensure you're ready for real-world challenges.</p>
+      <div class="course-evaluation__left">
+        <p class="course-evaluation__heading">Course <span class="course-evaluation__highlight">Evaluation</span></p>
+        <p class="course-evaluation__description">Get personalized feedback and assessments to track your growth, reinforce learning, and ensure you're ready for real-world challenges.</p>
+      </div>
+      <div class="course-evaluation__right">
+        <div class="course-evaluation__right--col">
+          <div class="course-evaluation__item course-evaluation__box--top">
+            <div class="course-evaluation__title">
+              <p class="course-evaluation__number">01</p>Lecture
+            </div>
+            <p class="course-evaluation__text">Engage with clear, structured lessons designed to explain concepts step by step, making even complex topics easy to grasp.</p>
+          </div>
+          <div class="course-evaluation__box course-evaluation__box--first"></div>
+          <div class="course-evaluation__box course-evaluation__box--second course-evaluation__box--bottom"></div>
+        </div>
+        <div class="course-evaluation__right--col">
+          <div class="course-evaluation__box course-evaluation__box--third course-evaluation__box--top"></div>
+          <div class="course-evaluation__item">
+            <div class="course-evaluation__title">
+              <p class="course-evaluation__number">02</p>Exercises
+            </div>
+            <p class="course-evaluation__text">Reinforce your understanding with hands-on tasks that let you apply what you've learned through real-world scenarios.</p>
+          </div>
+          <div class="course-evaluation__box course-evaluation__box--fourth course-evaluation__box--bottom"></div>
+        </div>
+        <div class="course-evaluation__right--col">
+          <div class="course-evaluation__box course-evaluation__box--fifth course-evaluation__box--top"></div>
+          <div class="course-evaluation__box course-evaluation__box--sixth"></div>
+          <div class="course-evaluation__item course-evaluation__box--bottom">
+            <div class="course-evaluation__title">
+              <p class="course-evaluation__number">03</p>Capstone
+            </div>
+            <p class="course-evaluation__text">Apply your skills in a final project that mirrors real professional work, perfect for your portfolio and future job opportunities.</p>
+          </div>
+        </div>
+      </div>
       <div class="course-evaluation__list row">
         <div class="col-12">
           <div class="course-evaluation__item">
@@ -293,15 +345,18 @@
     </section>
 
     <section class="cta border-radius-t-lg">
-      <div class="cta__overlay">
-        <p class="cta__title">Unlock your True <span class="cta__highlight">Potential</span></p>
-        <button class="cta__button button button--ghost text--white">
-          <div class="button__icon button__icon--dark">
-            <img src="../asset/images/arrow_small_right.svg" alt="">
-          </div>
-          JOIN THE NEST
-        </button>
+      <div class="cta__wrapper">
+        <div class="cta__overlay">
+          <p class="cta__title">Unlock your True <span class="cta__highlight">Potential</span></p>
+          <button class="cta__button button button--ghost text--white">
+            <div class="button__icon button__icon--dark">
+              <img src="../asset/images/arrow_small_right.svg" alt="">
+            </div>
+            JOIN THE NEST
+          </button>
+        </div>
       </div>
+
     </section>
   </main>
 

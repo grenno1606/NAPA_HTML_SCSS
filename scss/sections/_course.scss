@@ -27,10 +27,24 @@
     }
 
     &__description {
-      margin-top: 21px;
-      margin-bottom: 42px;
       max-width: 690px;
+      margin: 21px auto 42px;
       font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .course {
+    margin-bottom: 70px;
+
+    &__list {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    &__description {
+      margin: 21px auto 47px;
     }
   }
 }

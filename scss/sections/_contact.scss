@@ -41,12 +41,22 @@
     &__description {
       max-width: 608px;
       font-size: 16px;
-      margin-bottom: 49px;
+      margin: 0 auto 49px;
     }
 
     &__button {
       width: fit-content;
       margin: 36px auto 0;
     }
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .contact {
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 98px;
+    padding-top: 58px;
+    padding-bottom: 79px;
   }
 }

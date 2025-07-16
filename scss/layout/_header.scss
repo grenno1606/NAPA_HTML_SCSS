@@ -1,10 +1,17 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: $white;
   padding-top: 18px;
   padding-bottom: 18px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    display: none;
+  }
 
   &__menu {
     width: 59px;
@@ -24,13 +31,56 @@
   }
 }
 
+.navbar {
+  display: none;
+}
+
 @media (min-width: $breakpoint-md) {
   .header {
     padding-top: 36px;
     padding-bottom: 36px;
+
     &__menu {
       width: 62px;
       height: 62px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .header {
+    padding-top: 49px;
+    padding-bottom: 49px;
+
+    &__wrapper {
+      max-width: 1260px;
+      margin: 0 auto;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      display: flex;
+    }
+  }
+
+  .navbar {
+    display: unset;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 48px;
+    }
+
+    &__item {
+      & > a {
+        font-weight: 700;
+        color: $blue-dark;
+      }
     }
   }
 }

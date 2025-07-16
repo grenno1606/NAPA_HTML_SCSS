@@ -61,3 +61,16 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-xxl) {
+  .cta {
+    &__overlay {
+      margin-left: 0;
+    }
+
+    &__wrapper {
+      max-width: 1260px;
+      margin: 0 auto;
+    }
+  }
+}

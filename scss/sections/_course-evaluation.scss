@@ -22,6 +22,10 @@
     max-width: 305px;
     margin: 0 auto 18px;
   }
+
+  &__right {
+    display: none;
+  }
 }
 
 @media (min-width: $breakpoint-md) {
@@ -41,6 +45,76 @@
       max-width: 610px;
       margin: 0 auto 36px;
       font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .course-evaluation {
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    &__heading {
+      text-align: start;
+    }
+
+    &__description {
+      text-align: start;
+      max-width: none;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__right {
+      display: flex;
+      gap: 20px;
+
+      &--col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    &__box {
+      border-radius: 20px;
+      background-color: $blue-pale;
+      width: 271px;
+      height: 153px;
+
+      &--top {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &--bottom {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &--first {
+        height: 149px;
+      }
+
+      &--third {
+        height: 152px;
+      }
+
+      &--fifth {
+        height: 131px;
+      }
+
+      &--sixth {
+        height: 171px;
+      }
     }
   }
 }

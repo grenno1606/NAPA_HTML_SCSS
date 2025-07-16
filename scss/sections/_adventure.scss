@@ -52,3 +52,11 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-xxl) {
+  .adventure {
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 63px;
+  }
+}
