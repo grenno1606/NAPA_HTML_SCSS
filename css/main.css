@@ -1251,9 +1251,23 @@ input::placeholder,
   }
 }
 .cta {
-  background-image: url("../../asset/images/office_team_working_2.svg");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cta__background > img {
+  height: 100%;
+  width: 100%;
+}
+.cta__wrapper {
+  width: 100%;
+  height: 100%;
   padding-top: 55px;
   padding-bottom: 26px;
 }
@@ -1281,7 +1295,7 @@ input::placeholder,
 }
 
 @media (min-width: 768px) {
-  .cta {
+  .cta__wrapper {
     padding-top: 48px;
     padding-bottom: 33px;
   }
