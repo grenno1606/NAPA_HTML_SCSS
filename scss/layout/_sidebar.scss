@@ -43,12 +43,27 @@
       font-weight: 900;
     }
   }
+
+  &__button {
+    gap: 21px;
+  }
 }
 
 @media (min-width: $breakpoint-md) {
   .side {
     width: 417px;
-    padding: 18px 31px 9px 59px;
+    padding: 18px 31px 18px 59px;
+
+    &__close {
+      margin-bottom: 9px;
+
+      &-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }
 

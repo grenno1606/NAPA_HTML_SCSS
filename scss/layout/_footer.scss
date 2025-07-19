@@ -35,3 +35,14 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-xxl) {
+  .footer {
+    padding-top: 88px;
+    padding-bottom: 80px;
+
+    &__list {
+      margin-bottom: 51px;
+    }
+  }
+}

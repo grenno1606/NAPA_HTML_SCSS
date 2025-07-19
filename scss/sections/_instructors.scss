@@ -31,6 +31,17 @@
       max-width: 690px;
       margin: 21px auto 46px;
     }
+
+    &__list {
+      & > .row {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        & > * {
+          padding: 0 12px;
+        }
+      }
+    }
   }
 }
 
@@ -45,6 +56,15 @@
     &__list {
       max-width: 1260px;
       margin: 0 auto;
+
+      & > .row {
+        margin-left: -10px;
+        margin-right: -10px;
+
+        & > * {
+          padding: 0 10px;
+        }
+      }
     }
   }
 }

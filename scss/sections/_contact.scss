@@ -38,6 +38,12 @@
       margin-bottom: 21px;
     }
 
+    &__form {
+      & > *:first-child {
+        row-gap: 20px;
+      }
+    }
+
     &__description {
       max-width: 608px;
       font-size: 16px;
@@ -56,7 +62,21 @@
     max-width: 1260px;
     margin: 0 auto;
     margin-bottom: 98px;
-    padding-top: 58px;
-    padding-bottom: 79px;
+    padding: 58px 107px 79px 107px;
+
+    &__description {
+      max-width: 690px;
+      margin: 0 auto 55px;
+    }
+
+    &__form {
+      & > *:first-child {
+        margin-left: -10px;
+        margin-right: -10px;
+        & > * {
+          padding: 0 10px;
+        }
+      }
+    }
   }
 }

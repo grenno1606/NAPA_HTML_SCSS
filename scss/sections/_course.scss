@@ -16,6 +16,10 @@
     margin-top: 16px;
     margin-bottom: 30px;
   }
+
+  &__list {
+    row-gap: 22px;
+  }
 }
 
 @media (min-width: $breakpoint-md) {

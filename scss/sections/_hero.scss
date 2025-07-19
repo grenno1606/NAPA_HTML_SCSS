@@ -111,11 +111,14 @@
 
     &__images {
       display: flex;
+      & > * {
+        padding: 0 calc(10.24px / 2);
+      }
     }
 
     &__image {
-      width: 176.76px;
-      height: 176.76px;
+      max-width: 176.76px;
+      max-height: 176.76px;
       border-top-left-radius: 140px;
       border-top-right-radius: 140px;
       overflow: hidden;
@@ -179,11 +182,15 @@
       background-repeat: no-repeat;
       background-position: left;
       row-gap: 20px;
+
+      & > * {
+        padding: 0 10px;
+      }
     }
 
     &__image {
-      width: 244px;
-      height: 244px;
+      max-width: 244px;
+      max-height: 244px;
       border-radius: 0;
 
       &-first {
