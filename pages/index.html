@@ -191,15 +191,23 @@
     </section>
 
     <section class="adventure border-radius-5 margin-sm">
-      <div class="adventure__overlay">
-        <p class="adventure__title">Your <span class="adventure__highlight">Learning </span>Adventure Begins</p>
-        <button class="adventure__button button button--ghost text--white">
-          <div class="button__icon button__icon--dark">
-            <img src="../asset/images/arrow_small_right.svg" alt="">
-          </div>
-          JOIN THE NEST
-        </button>
+      <picture class="adventure__background">
+        <source srcset="../asset/images/adventure_background_desktop.svg" media="(min-width: 1400px)">
+        <source srcset="../asset/images/adventure_background_tablet.svg" media="(min-width: 768px)">
+        <img src="../asset/images/adventure_background.svg" alt="">
+      </picture>
+      <div class="adventure__wrapper">
+        <div class="adventure__overlay">
+          <p class="adventure__title">Your <span class="adventure__highlight">Learning </span>Adventure Begins</p>
+          <button class="adventure__button button button--ghost text--white">
+            <div class="button__icon button__icon--dark">
+              <img src="../asset/images/arrow_small_right.svg" alt="">
+            </div>
+            JOIN THE NEST
+          </button>
+        </div>
       </div>
+
     </section>
 
     <section class="instructors mb-10 margin-sm">

@@ -1001,12 +1001,25 @@ input::placeholder,
   }
 }
 .adventure {
-  background-image: url("../../asset/images/adventure_background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 49px 18px 42px 20px;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 30px;
+}
+.adventure__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.adventure__background > img {
+  height: 100%;
+  width: 100%;
+}
+.adventure__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 49px 18px 42px 20px;
 }
 .adventure__overlay {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.156) 0%, rgba(0, 0, 0, 0.26) 100%);
@@ -1030,8 +1043,10 @@ input::placeholder,
 
 @media (min-width: 768px) {
   .adventure {
-    padding: 59px 35px;
     margin-bottom: 46px;
+  }
+  .adventure__wrapper {
+    padding: 59px 35px;
   }
   .adventure__overlay {
     margin-left: auto;
@@ -1050,6 +1065,9 @@ input::placeholder,
     max-width: 1260px;
     margin: 0 auto;
     margin-bottom: 63px;
+  }
+  .adventure__wrapper {
+    padding: 64px 107px 54px;
   }
 }
 .instructors {
