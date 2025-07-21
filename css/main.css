@@ -220,7 +220,10 @@ body {
   border-radius: 20px;
 }
 .instructor-card__overlay {
-  display: none;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
   border-radius: 20px;
   position: absolute;
   top: 0;
@@ -236,7 +239,8 @@ body {
   padding-left: 13px;
 }
 .instructor-card:hover > .instructor-card__overlay {
-  display: flex;
+  opacity: 100%;
+  visibility: visible;
 }
 .instructor-card__label {
   font-weight: 900;

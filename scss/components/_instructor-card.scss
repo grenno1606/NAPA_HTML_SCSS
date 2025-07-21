@@ -12,7 +12,10 @@
   }
 
   &__overlay {
-    display: none;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
     border-radius: 20px;
     position: absolute;
     top: 0;
@@ -33,7 +36,8 @@
   }
 
   &:hover > &__overlay {
-    display: flex;
+    opacity: 100%;
+    visibility: visible;
   }
 
   &__label {
