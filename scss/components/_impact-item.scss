@@ -8,7 +8,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 254px;
 
     &--value {
       color: $blue;
@@ -19,6 +18,18 @@
     &--label {
       color: $white;
       font-size: 16px;
+    }
+
+    &-second {
+      padding: 18px 63px 19px 38px;
+    }
+
+    &-third {
+      padding: 18px 48px 19px 38px;
+    }
+
+    &-fourth {
+      padding: 18px 59px 19px 43px;
     }
   }
 }

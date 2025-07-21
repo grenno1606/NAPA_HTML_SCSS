@@ -12,6 +12,7 @@
   }
 
   &__overlay {
+    display: none;
     border-radius: 20px;
     position: absolute;
     top: 0;
@@ -25,11 +26,14 @@
     );
     backdrop-filter: blur(4px);
     color: $white;
-    display: flex;
     flex-direction: column;
     justify-content: end;
     padding-bottom: 29px;
     padding-left: 13px;
+  }
+
+  &:hover > &__overlay {
+    display: flex;
   }
 
   &__label {

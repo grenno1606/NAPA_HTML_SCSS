@@ -3,11 +3,20 @@
   flex-direction: column;
   align-items: center;
   background-color: $white;
-  padding: 29px 18px 57px 18px;
+  padding: 29px 18px 33px 18px;
   margin-bottom: 27px;
   box-shadow: 0px 4px 32px 0px $blue-tint;
 
   &__content-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content-bottom {
+    background-color: $background-color;
+    padding: 22px 36px 24px 46px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +38,7 @@
   &__description {
     max-width: 325px;
     text-align: center;
-    margin-bottom: 43px;
+    margin-bottom: 21px;
   }
 
   &__title {
@@ -41,8 +50,12 @@
 @media (min-width: $breakpoint-md) {
   .impact {
     padding-top: 54px;
-    padding-bottom: 94px;
+    padding-bottom: 50px;
     margin-bottom: 50px;
+
+    &__content-bottom {
+      padding: 37px 60px 44px 58px;
+    }
 
     &__heading {
       font-size: 40px;
@@ -52,7 +65,7 @@
 
     &__description {
       max-width: 640px;
-      margin-bottom: 74px;
+      margin-bottom: 37px;
     }
 
     &__title {
@@ -61,7 +74,6 @@
     }
 
     &__items {
-      max-width: 520px;
       row-gap: 20px;
     }
   }
@@ -71,13 +83,17 @@
   .impact {
     max-width: 1260px;
     margin: 0 auto;
-    padding: 75px 70px 93px;
+    padding: 75px 70px 57px;
     margin-bottom: 72px;
 
     &__content-top {
       flex-direction: row;
-      margin-bottom: 100px;
+      margin-bottom: 65px;
       gap: 70px;
+    }
+
+    &__content-bottom {
+      padding: 35px 35px 36px 38px;
     }
 
     &__heading {
